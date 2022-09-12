@@ -8,25 +8,57 @@
     <link rel="icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/style.css"/>
     <!--<link rel="stylesheet" href="https://assets.bux.osu.edu/v0.7.3/css/bux-styles.min.css"/>-->
+    <script scr = "https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://assets.bux.osu.edu/v0.7.3/css/bux-styles.min.css"/>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 
     <title>Dinh Song An Nguyen</title>
 
 </head>
 <body>
+
     <div class = " container">
         <div class = "image-container">
             <h1>Dinh Song An <br>(Song) Nguyen</h1>
             <img src = "img/testy_pic.jpg" class = "responsive">
             <footer class = "contact">
-                <a href="https://www.linkedin.com/in/song-an-nguyen/">LinkedIn</a>
-                <a href="https://github.com/ndsongan">GitHub</a><br>
-                <a href="mailto:nguyen.2687@buckeyemail.osu.edu">nguyen.2687@buckeyemail.osu.edu</a>
+                <!--<a href="https://www.linkedin.com/in/song-an-nguyen/" class = "fa fa-linkedin"></a>
+                <a href="https://github.com/ndsongan" class ="fa fa-github"></a><br>
+                <a href="mailto:nguyen.2687@buckeyemail.osu.edu" class = "fa fa-envelope"></a>-->
+                <ul class="bux-social-links bux-social-links--light">
+                    <li class="bux-social-links__item bux-social-links__item--LinkedIn">
+                        <a class="bux-social-links__link" href="https://www.linkedin.com/in/song-an-nguyen/" target="_blank">
+                            <span class="visually-hidden">LinkedIn profile — external</span>
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="bux-social-links__item bux-social-links__item--GitHub">
+                        <a class="bux-social-links__link" href="https://github.com/ndsongan" target="_blank">
+                            <span class="visually-hidden">GitHub profile — external</span>
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="bux-social-links__item bux-social-links__item--Email">
+                        <a class="bux-social-links__link" href="mailto:nguyen.2687@buckeyemail.osu.edu" target="_blank">
+                            <span class="visually-hidden">Email profile — external</span>
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li><a href = "#about">About</a></li>
+                    <li><a href = "#edu">Education</a></li>
+                    <li><a href = "#exp">Experience</a></li>
+                    <li><a href = "#publications">Publications</a></li>
+                </ul>
             </footer>
+            
         </div>
         
         <div class = "text-container">
-            <h1>About</h1>
+            <h1 id = "about">About</h1>
             <p>
                 I am currently a first year Ph.D student in Computer Science at the Ohio State University.
                 My research interests include data analytics, machine learning, graph theory, and mathematical 
@@ -42,12 +74,12 @@
 
             <hr>
 
-            <h1>Education</h1>
-            <p>The Ohio State University <i>(Aug, 2022 - present)</i></p>
+            <h1 id = "edu">Education</h1>
+            <h3>The Ohio State University <i>(Aug, 2022 - present)</i></h3>
             <ul>
                 <li>First year Ph.D. candidate.</li>
             </ul>
-            <p>Saint John's University <i>(Aug, 2018 - May, 2022)</i></p>
+            <h3>Saint John's University <i>(Aug, 2018 - May, 2022)</i></h3>
             <ul>
                 <li>Bachelor of Arts in Computer Science and Mathematics, <i><span style="color: #535151
                     ">Summa Cum Laude</span></i></li>
@@ -60,7 +92,7 @@
             
 
             <hr>
-            <h1>Professional Experience</h1>
+            <h1 id = "exp">Professional Experience</h1>
             <h3>Mathematics Course Assistant <i>(August 2019 - May 2022)</i></h3>
             <h4>Saint John's University, Collegeville, MN</h4>
             <ul>
@@ -72,7 +104,7 @@
             <h3>Summer Thesis Fellow <i>(June 2021 - August 2021)</i></h3>
             <h4>Saint John's University, Collegeville, MN</h4>
             <ul>
-                <li>Develop an Honor Thesis titled “Methods of Predicting the Spread of Disease Using Reproductive Value and Gradient-Descent”.</li>
+                <li>Develop a Distinguished Thesis titled “Methods of Predicting the Spread of Disease Using Reproductive Value and Gradient-Descent”.</li>
                 <li>Use available data on the SARS-CoV-2 to construct a graph structure for the spread of disease in cities.</li>
                 <li>Apply machine learning techniques and mathematical concepts to predict infection growth as well as potential outbreaks of COVID-19.</li>
             </ul>
@@ -92,8 +124,19 @@
                 <li>Wrote, reviewed, and analyzed programming problems given by advisor.</li>
                 <li>Learned various industry standards and techniques.</li>
             </ul>
-          </div>
+            <hr>
+            <h1 id = "publications">Publications & Presentations</h1>
+                <ul>
+                    <li>Nguyen, D. COVID-19 Prediction in Thu Duc District of Ho Chi Minh City, Viet Nam using Markov Chain. Online presentation
+                        at National Conference for Undergraduate Research (NCUR) 2022; April 5, 2022.</li>
+                    <li>Nguyen, D. Methods of Predicting the Spread of Disease (Pi Mu Epsilon CSB/SJU) 2022; April 9, 2022.</li>
+                    <li> Nguyen, Dinh Song An, “Two Methods of Forecasting the Spread of Disease Using R0 Coefficient and Gradient-Descent”
+                        (2022). CSBSJU Distinguished Thesis. 27. <a href="https://digitalcommons.csbsju.edu/ur_thesis/27">https://digitalcommons.csbsju.edu/ur_thesis/27</a></li>
+                </ul>
 
+          </div>
+          
+          
     </div>
 <!--<script src="https://assets.bux.osu.edu/v0.7.3/js/bux.min.js"></script>-->
 <script src = "script.js"></script>
