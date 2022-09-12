@@ -9,6 +9,43 @@ body {
     background-color: beige;
     font-family: "BuckeyeSans", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 }
+/*
+.navi {
+    height: 5vh;
+    width: 100%;
+    background-position: center;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;
+    padding-top: 0px;
+    padding-left: 0%;
+    padding-right: 10%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+*/
+.contact ul li {
+    list-style-type: none;
+}
+
+.contact ul li a{
+    color: #800000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact ul li a:hover {
+    color: rgb(172, 29, 105);
+    transition: .3s;
+}
 
 .container {
     display: grid;
@@ -27,6 +64,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    overscroll-behavior-y: contain;
 }
 
 .text-container {
@@ -45,17 +83,17 @@ body {
 
 .text-container h3 {
     font-size: 22px;
-    color: #FF2400;
+    color: #ba0c2f;
 }
 
 .text-container h4 {
-    color: #FF2400;
+    color: #ba0c2f;
 }
 
 .contact {
     text-align: center;
-    padding: 150px;
-    bottom: 10;
+    padding: 110px;
+    bottom: 20;
     position:fixed;
 
 }
@@ -72,6 +110,8 @@ body {
 .text-container ul li {
     margin-left: 2em;
 }
+
+
 
 @media (max-width: 800px)
 {   
@@ -92,12 +132,13 @@ body {
 
     .image-container h1 {
         position: static;
+        
     }
 
     .text-container {
         width: 100%;
         grid-area: 'text-container';
-        font-size: 7px;
+        font-size: 10px;
     }
 
     .text-container h3{
@@ -108,7 +149,7 @@ body {
         font-size: 13px;
     }
     .contact {
-        font-size: 5px;
+        font-size: 10px;
         text-align: center;
         position: static;
         padding: 0px;
@@ -128,6 +169,11 @@ body {
         ;
     }
 
+    .container ul li {
+        display: inline-block;
+        margin-bottom: 3px;  
+    }
+
     html, body {
         overflow-x: hidden;
     }
@@ -142,5 +188,15 @@ body {
 
     
 ;
+
+}
+
+@media (max-width: 1300px) {
+    .image-container h1{
+        padding-right: 200px;
+    }
+
+    .contact {
+    }
 
 }
